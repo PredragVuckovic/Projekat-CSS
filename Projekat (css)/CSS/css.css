@@ -1,0 +1,475 @@
+ @keyframes pocetak 
+ {
+ 	from { width: 10px;}
+ 	to { width: 95%;}
+ }
+
+@keyframes hover{
+	to { box-shadow: 10px 10px; color: darkgreen; background-color:white;}
+
+}
+
+ body{
+ 	background-image:url(../images/pozadina.jpg);
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-attachment: fixed;
+ 	background-position: center;
+ }
+
+.blok1{
+	margin:10px auto 0px auto;
+	width: 95%;
+	height: 100px;
+	text-align: center;
+	background-color: #006400;
+	position: relative;
+	animation:pocetak 3s;
+	overflow: hidden;
+	opacity: 0.8;
+	display: block;
+}
+
+#uvodni{
+	text-align: center;
+	margin: 10px 10px;
+	font-size: 50px;
+	color: #00ffff;
+	font-weight: bold;
+	
+}
+
+#logo{
+	float:left;
+	position: relative;
+	width:100px; 
+	height:100px;
+	background-color: #006400;
+}
+
+.bar{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	height: 60px;
+	background-color: #2CAE47;
+	overflow:hidden;
+}
+
+
+.nav{
+	display: block;
+	margin: 0px auto;
+	width: 600px;
+}
+.nav ul{
+	display: block;
+	margin-left: auto;
+	margin-right: auto; 
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+.nav ul li{
+	display: inline-block;
+	float: left;
+	margin-right: 10px;
+}
+.nav ul li a{
+	display: block;
+	width: 140px;
+	height: 50px;
+	text-align: center;
+	padding: 15px 0px;
+	font-family: verdana, sans-serif;
+	color: #fff;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+.nav ul li:hover a{
+	animation: hover 0.5s; 
+	animation-fill-mode: forwards;
+}
+.nav-res{
+	display: none;
+	margin: 0px auto;
+	background-color: #006400;
+	width: 95%;
+	height: 200px;
+}
+.nav-res ul li:hover a{
+	background-color: white;
+	color: darkgreen;
+}
+
+.prikazi{
+	display: none;
+	background-color: #006400;
+	width: 95%;
+	margin: 0px auto;
+	color: #fff;
+	text-align: center;
+	height: 30px;
+	padding: 5px 0px;
+	box-sizing: border-box;
+	user-select: none;
+
+}
+.nav-res ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+
+}
+.nav-res ul li a{
+	display: block;
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	font-family: Verdana, sans-serif;
+	color: #fff;
+	box-sizing: border-box;
+	text-decoration: none;
+	padding: 10px 0;
+}
+
+input[type="checkbox"]{
+	display: none;
+}
+
+input[type="checkbox"]:checked ~ .nav-res{
+	display: block;
+}
+h1{
+	font-family: "Times new Roman";
+	font-size: 50px;
+	text-align: center;
+	color: #778899;
+}
+
+.main{
+	background: rgba(255,255,255,0.8);
+	width: 95%;
+	overflow: hidden;
+	box-sizing: border-box;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.pocetna img{
+	width: 50%;
+	height:50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.pocetna a{
+	text-decoration: none;
+	font-style: italic;
+	color: black;
+}
+
+#slika2{
+	width: 450px;
+	height: 350px;
+	float: right;
+	display: inline;
+	margin:5px;
+	border-style: solid;
+	border-color: #a9a9a9;
+	border-radius: 10%;
+}
+
+.footer{
+	background: #006400;
+	color:white;
+	width: 95%;
+	height: 40px;
+	text-align: center;
+	font-family: verdana;
+	padding:10px 15px;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+.footer img{
+	float: right;
+	height: 20px;
+	width:  20px;
+	position: relative;
+	display: inline;
+	margin-left: 10px;
+}
+
+.footer p{
+	display: inline;
+}
+.sadrzaj{
+	padding: 35px;
+	box-sizing: border-box;
+}
+
+.sadrzaj p{
+	display: inline;
+	font-size: 18px;
+}
+#planine{
+	list-style-type: square;
+}
+
+.slike{
+	margin-bottom: 100px;
+	display: inline-block;
+}
+
+.pocetna{
+	text-align: center;
+	font-family: Times New Roman;
+	font-size: 18px;
+}
+
+#ptext{
+	margin: 20px 20px;
+
+}
+
+.slike img{
+	width:  100%;
+	height: 85%;
+
+}
+.slike h2{
+	text-align: center;
+	color: #778899;
+}
+.container{
+	height: 200px;
+	width:  30%;
+	float: left;
+	display: inline-block;
+	margin: 10px 10px;
+}
+.container2{
+	border: 1px solid blue;
+	font-style: "Times New Roman";
+	height: 100%;
+	width: 250px;
+	display: block;
+	margin:0px auto;
+	background-color: #9ACD32;
+	color: #708090;
+}
+.container2:hover{
+	position: relative;
+	height: 300px;
+	width: 400px;
+	z-index: 10;
+	font-size: 20px;	
+}
+.container2 p{
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+}
+.kontakt{
+	float: left;
+	width: 50%;
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+.kontakt input{
+	display: block;
+	background-color: #f5f5f5;
+	border-radius: 10px;
+}
+.kontakt p{
+	margin-left: 0px;
+	text-align: justify;
+	font-size: 18px;
+	font-family: "Times New Roman", Times, sans-serif;
+}
+input[type=radio]{
+	margin: 4px;
+	display: inline-block;
+}
+textarea{
+	resize: none;
+	height: 150px;
+	width: 250px;
+	display: block;
+	margin: 5px;
+	background-color: #f5f5f5;
+}
+input[type=submit], input[type=reset]{
+	display: inline-block;
+	width: 75px;
+	height: 25px;
+	font-family: helvetica;
+	letter-spacing: 1px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+input[type=submit]:hover{
+	background-color: #006400;
+	color: white;
+}
+input[type=reset]:hover{
+	background-color: red;
+	color:white; 
+}
+#map{
+	width: 50%;
+	float: right;
+	display: inline-block;
+	padding-right: 20px;
+	box-sizing: border-box;
+	
+}
+#map iframe{
+	width: 450px;
+	height: 350px;
+	border: 1px solid gray;
+	float: right;
+}
+#map p{
+	float: right;
+	margin-bottom: 15px;
+	font-size: 18px;
+}
+#adresa{
+	float: right;
+}
+
+
+@media only screen and (max-width: 900px){
+
+	.nav{
+		width: 440px;
+	}
+	.nav ul li a{
+		width: 100px;
+	}
+	.container{
+		width: 50%;
+		margin: 10px 0;
+	}
+	.container2:hover{
+		width: 300px;
+		height: 250px;
+	}
+	.kontakt{
+		padding: 20px 60px;
+		width:100%;
+		display: block;
+		float: none;
+		margin: 0px auto;
+	}
+	textarea{
+		width: 40%;
+	}
+
+	#map{
+		width: 100%;
+		padding: 20px 60px;
+	}
+	#map iframe{
+		width: 500px;
+		height: 300px;
+		float: none;
+		margin: 0px auto;
+		margin-bottom: 10px;
+
+	}
+	#map p{
+		float: none;
+		font-size: 16px;
+	}
+
+}
+
+@media only screen and (max-width: 480px){
+
+	.blok1{
+		width: 95%;
+		height: 50px;
+		animation: none;
+	}
+
+	#logo{
+		width: 50px;
+		height: 50px;
+	}
+
+	#uvodni{
+		font-size: 24px;
+	}
+
+	.bar{
+		display: none;
+	}
+	.prikazi{
+		display: block;
+	}
+	.main{
+		font-size: 16px;
+		padding-bottom: 150px;
+	}
+	h1{
+		font-size: 26px;
+	}
+	.pocetna img{
+		width: 80%;
+		height: 80%;
+		margin-bottom: 40px;
+		margin-top: 20px;
+
+	}
+	.footer{
+		height: 50px;
+		font-size: 14px;
+		padding: 15px;
+	}
+	#ptext{
+		margin: 20px 10px;
+	}
+	#slika2{
+		float: none;
+		width: 300px;
+		height: 250px;
+		margin: 5px auto;
+		display: block;
+	}
+	.container{
+		width: 100%;
+		float: none;
+		display: block;
+		margin: 20px auto;
+
+	}
+	.container2:hover{
+		position: static;
+		width: 250px;
+		height: 100%;
+		font-size: 16px;
+	}
+	.kontakt{
+		padding: 0px 20px;
+	}
+	textarea{
+		width: 80%;
+	}
+
+	#map{
+		padding: 0px 20px;
+	}
+	#map iframe{
+		width: 300px;
+		height: 250px;
+	}
+
+}
